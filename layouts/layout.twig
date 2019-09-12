@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+{% block head %}
+{% include 'parts/head.twig' %}
+{% endblock %}
+<body id="home" class="loaded {{ pageClass }}" style="">
+    {% block hero %} 
+    <div id="hero">
+            <div class="container">
+                <div class="row top-bar load">
+                    <div class="logo small-12 medium-4 large-7 columns text-left">
+                        <a href="/">
+                            <img src="./assets/Razzaq-Capital-Logo-White.png">
+                        </a>
+                    </div>
+                    <div class="small-12 medium-8 large-5 contact-us align-self-middle columns">
+                        <a class="hero-link" target="_blank" href="#">Meet The Team</a>
+                        <a class="hero-link" href="mailto:info@razzaqcapital.com?subject=General%20Inquiry">Contact Us</a>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    {% endblock %}
+    {% block contents %}<h1>404- not found</h1>{% endblock %}
+    
+    {% block footer %}
+        {% include "parts/footer.twig" %}
+    {% endblock %}
+
+    {% block scripts %}{% endblock %}
+    
+
+
+
+</body>
+
+</html>

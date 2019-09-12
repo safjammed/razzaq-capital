@@ -3,39 +3,11 @@
     src: url(fonts/Gilroy-ExtraBold.otf);
 }
 
-
-/* 
-#hero h1 span {
-    font-family: GilroyExtraBold;
-    font-size: 115px;
-}
-
-#hero h1 span:last-child {
-    font-size: 110px;
-    font-family: GilroyExtraBold;
-    font-style: normal;
-    color: #ff6665;
-}
-
-#hero h1 {
-    min-height: 400px;
-    line-height: 1.5em;
-} */
-
-.typed {
-    /* display: none; */
+.typed {    
     transition: 0.5s;
 }
 
 
-/* #hero h1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: auto;
-    margin-bottom: auto;
-    text-shadow: 3px 5px 2px #474747;
-} */
 
 #hero a.hero-link:hover {
     text-shadow: none;
@@ -56,7 +28,7 @@ h3.subtitle {
 h1.title {
     font-size: 4.6875em;
     text-align: center;
-    color: #4adada;
+    color: #1b1924;
     font-family: GilroyExtraBold;
 }
 
@@ -66,8 +38,7 @@ h1.title {
     filter: grayscale(100);
     opacity: 0.5;
     transition: 0.5s ease-in-out;
-    vertical-align: m;
-    /* transform: translateY(-50%); */
+    vertical-align: middle;    
 }
 
 #companies .colorize:hover img {
@@ -86,8 +57,7 @@ body {
 .typerr h1 {
     font-family: GilroyExtraBold;
     font-size: 100px;
-    line-height: 1.2;
-    /* text-shadow: 3px 5px 2px #474747; */
+    line-height: 1.2;    
 }
 
 #helping {
@@ -109,9 +79,8 @@ body {
 }
 
 .colorize {
-    display: table;
-    background: #ebebeb;
-    border: 30px solid #fff;
+    border: 1px solid #c4c4c4;
+    border-right: none;
 }
 
 .colorize a {
@@ -129,6 +98,40 @@ div#companies {
     padding-left: 25px;
 }
 
+#office{    
+    background: url('/assets/img/office.jpg') no-repeat center fixed; 
+    background-size:cover;
+    padding: 350px 0;
+}
+@font-face {
+    font-family: futura-pt;
+    src: url(fonts/futura-pt.woff2);    
+  }
+
+.static-page div#hero {
+    height: auto;
+}
+
+.static-page #hero .top-bar {
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.static-page p, .static-page h1.page-title {
+    color: #0a0a0a;
+    font-family: futura-pt;
+}
+.static-page h1.page-title {
+    letter-spacing: 0.159091em;
+    font-size: 2.8em;
+    font-weight: 400;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+
+
+
 @media (max-width: 768px) {
     /* MOBILE */
     .typerr h1 {
@@ -140,12 +143,42 @@ div#companies {
         opacity: 1;
     }
     .colorize {
-        border: 10px solid #fff;
+        /* border: 1px solid #c4c4c4; */
+        padding: 30px;
     }
     .m-p-25 {
         padding-left: 20px;
     }
     h1.title {
         font-size: 2.5rem;
+    }    
+}
+
+
+
+@media print, screen and (min-width: 37.5em){ /*desktop only*/
+    .small-6.medium-3.colorize {
+        flex: 0 0 20%;
+        max-width:20%;
+    }
+    .colorize {
+        height: 204px !important;
+        max-height: 204px !important;
+        text-align: center;
+        display: table;
+    }
+    
+    .colorize a {
+        display: table-cell;
+        text-align: center;
+    }
+    
+    #companies .colorize img {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 215px;
+        max-height: 200px;
     }
 }
