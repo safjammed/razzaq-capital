@@ -92,6 +92,11 @@
                         <img src="./assets/img/5197.png" alt="minavitamins">
                     </a>
                 </div>
+                <div class="small-6 medium-3 colorize show-for-small-only">
+                    <a href="http://minavitamins.com" target="_blank">
+                        <img src="./assets/img/5197.png" alt="minavitamins" style="visibility: hidden">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -118,8 +123,18 @@
 
 
 {% block scripts %}
+    <script type="text/javascript" src="./assets/es5.js"></script>
 <script>
+        function bd(){
+            var browser = browserDetect();
+            (browser.mobile && browser.name == 'safari') ? $("body").addClass('safari') : $("body").removeClass('safari');
+        }
         $(function() {
+            bd();
+            $(window).on("resize", function (e) {
+                console.log("window resized");
+                bd();
+            });
             new TypeIt(".typed", {
                 strings: ["making an impact.", "move at full speed.", "break down barriers.", "disrupt industries."],
                 speed: 100,

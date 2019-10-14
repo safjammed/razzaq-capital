@@ -6,8 +6,8 @@ if (!file_exists('storage')) {
     mkdir('storage', 0777, true);
 }
 $twig = new \Twig\Environment($loader, [
-    'cache' => 'storage',
-    // 'cache' => false,
+//    'cache' => 'storage',
+     'cache' => false,
 ]);
 
 

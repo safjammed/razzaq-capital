@@ -99,7 +99,7 @@ div#companies {
 }
 
 #office{    
-    background: url('/assets/img/office.jpg') no-repeat center fixed; 
+    background: url('/assets/img/office.jpg') no-repeat center fixed;
     background-size:cover;
     padding: 350px 0;
 }
@@ -129,6 +129,9 @@ div#companies {
     padding-bottom:80px;
 }
 
+body.safari #office{
+    background-attachment: scroll;
+}
 
 
 
