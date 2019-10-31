@@ -25,6 +25,9 @@ switch ($_SERVER['REQUEST_URI']) {
     case '/privacy':
         echo $twig->render('pages/privacy.twig', ['pageClass' => 'static-page', 'pageTitle' => 'Privacy Policy']);
         break;
+    case '/team':
+        echo $twig->render('pages/team.twig', ['pageClass' => 'static-page', 'pageTitle' => 'Our Team']);
+        break;
     default:
         header("HTTP/1.0 404 Not Found");
         die("<h1>404 - NOT FOUND</h1> <br> <a href='/'>GO HOME</a>");
