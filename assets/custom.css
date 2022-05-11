@@ -645,11 +645,16 @@ body.safari #office{
 }
 
 figure.team-member {
-    overflow: visible;display: flex;justify-content: center;align-content: center;align-items: center;margin-bottom: 2.2rem;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 2.2rem;
     flex-wrap: wrap;
 }
 
-.people-list {overflow: visible;}
+.people-list {overflow: visible; justify-content: center}
 
 .team-member a.overlay {
     height: 350px;
@@ -663,9 +668,20 @@ figure.team-member {
 }
 .team-member .overlay .read-more-btn {display: none;}
 
-.team-member .figcaption {left: 50%;transform: translateX(-50%);}
-.under .name, .under .title {color: #000;}
-
-.under {text-align: center;}
-
-.team-member:hover>.under {visibility: hidden;}
+.team-member .figcaption {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.under {
+    text-align: center;
+    margin-top: 1rem
+}
+.under .name{
+    font-size: 1.2rem;
+}
+.under .name, .under .title {
+    color: #000;
+}
+.team-member:hover>.under {
+    visibility: hidden;
+}
