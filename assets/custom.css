@@ -688,3 +688,34 @@ figure.team-member {
 .team-member:hover>.under {
     visibility: hidden;
 }
+
+.sq {fill: #4adada;width: 10px;margin-right: 1.2rem;}
+
+.flex {display: flex;}
+
+.justify-center {justify-content: center;align-items: center;align-content: center;}
+#ia {
+    font-size: 1.5rem;
+}
+#ia .flex {
+    margin: 1.2rem 0;
+}
+#arriving h3.cyan{
+     font-family: Overpass, Helvetica, sans-serif;
+     font-weight: 800;
+     font-style: normal;
+     text-transform: uppercase;
+     font-size: .75em;
+     letter-spacing: 1.75px;
+     color: #4adada;
+     margin-bottom: 2rem;
+    text-align: left;
+ }
+#arriving h3.cyan:after {
+    content: '';
+    width: 102px;
+    height: 1px;
+    margin-top: 4px;
+    background-color: #4adada;
+    display: block;
+}
