@@ -272,8 +272,8 @@ body.safari #office{
     -webkit-transition: .5s ease;
     transition: .5s ease;
     margin-right: -1px;
-    min-height: 280px;
-    max-height: 400px
+    /*min-height: 280px;*/
+    /*max-height: 400px*/
 }
 
 .team-member .team-wrapper {
@@ -634,7 +634,9 @@ body.safari #office{
 
 
 
-.img-wrap {width: 350px;height: 350px;border-radius: 100%;overflow: hidden;}
+.img-wrap {
+    width: 350px;height: 350px;border-radius: 100%;overflow: hidden;
+}
 
 .img-wrap img {
     object-fit: cover;
@@ -642,7 +644,10 @@ body.safari #office{
     height: 100%;
 }
 
-figure.team-member {overflow: visible;display: flex;justify-content: center;align-content: center;align-items: center;margin-bottom: 2.2rem;}
+figure.team-member {
+    overflow: visible;display: flex;justify-content: center;align-content: center;align-items: center;margin-bottom: 2.2rem;
+    flex-wrap: wrap;
+}
 
 .people-list {overflow: visible;}
 
@@ -650,9 +655,17 @@ figure.team-member {overflow: visible;display: flex;justify-content: center;alig
     height: 350px;
     width: 350px;
     border-radius: 350px;
-    left: 50%;top: 50%;transform: translate(-50%, -50%);
+    left: 25px;
+    top: 0;
 }
-
+.team-member figcaption.figcaption{
+    display: none;
+}
 .team-member .overlay .read-more-btn {display: none;}
 
 .team-member .figcaption {left: 50%;transform: translateX(-50%);}
+.under .name, .under .title {color: #000;}
+
+.under {text-align: center;}
+
+.team-member:hover>.under {visibility: hidden;}
