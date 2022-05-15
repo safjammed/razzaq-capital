@@ -1,0 +1,14 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host=127.0.0.1",
+    "build": "vite build --outDir=./dist",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9",
+    "vite": "^2.8.0"
+  }
+}

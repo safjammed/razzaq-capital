@@ -7370,7 +7370,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach {
+.approach {
 
     background-color: #1b1924;
 
@@ -7382,7 +7382,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (min-width:37.5em) and (max-width:62.4375em) {
 
-    #approach {
+    .approach {
 
         padding: 120px 0
 
@@ -7394,7 +7394,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (max-width:37.4375em) {
 
-    #approach {
+    .approach {
 
         padding: 100px 0
 
@@ -7404,7 +7404,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach h3.hidden-section:after {
+.approach h3.hidden-section:after {
 
     -webkit-transition: width 1s cubic-bezier(.6, .2, .1, 1) .5s;
 
@@ -7428,7 +7428,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach h3.hidden:after {
+.approach h3.hidden:after {
 
     width: 0
 
@@ -7436,7 +7436,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach h3 {
+.approach h3 {
 
     font-family: Overpass, Helvetica, sans-serif;
 
@@ -7458,7 +7458,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach h3:after {
+.approach h3:after {
 
     content: '';
 
@@ -7478,7 +7478,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (max-width:37.4375em) {
 
-    #approach h3 {
+    .approach h3 {
 
         margin-bottom: 50px
 
@@ -7488,7 +7488,7 @@ screen and (min-width:37.5em) {
 
 
 
-#approach p {
+.approach p {
 
     font-family: Overpass, Helvetica, sans-serif;
 
@@ -7530,7 +7530,7 @@ screen and (min-width:37.5em) {
 
 
 
-.is_ie #approach p {
+.is_ie .approach p {
 
     color: #baa898;
 
@@ -7542,9 +7542,9 @@ screen and (min-width:37.5em) {
 
 
 
-.is_edge #approach p,
+.is_edge .approach p,
 
-.is_ie #approach p {
+.is_ie .approach p {
 
     color: #baa898;
 
@@ -7556,7 +7556,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (min-width:90em) {
 
-    #approach p {
+    .approach p {
 
         font-size: 2.6875em
 
@@ -7568,7 +7568,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (min-width:37.5em) and (max-width:62.4375em) {
 
-    #approach p {
+    .approach p {
 
         font-size: 1.875em
 
@@ -7580,7 +7580,7 @@ screen and (min-width:37.5em) {
 
 @media screen and (max-width:37.4375em) {
 
-    #approach p {
+    .approach p {
 
         font-size: 1.625em
 

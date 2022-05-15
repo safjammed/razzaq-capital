@@ -14,10 +14,9 @@
                         </a>
                     </div>
                     <div class="small-12 medium-8 large-5 contact-us align-self-middle columns">
-                        <a class="hero-link" target="_blank" href="/#approach">Purpose</a>
-                        <a class="hero-link" target="_blank" href="/team">Team</a>
-                        <a class="hero-link" target="_blank" href="/#arriving">Investment</a>
-                        <a class="hero-link" href="mailto:info@razzaqcapital.com?subject=General%20Inquiry">Contact</a>
+                        {% for item in menu %}
+                            <a class="hero-link" href="{{item.to|e}}">{{ item.title|e }}</a>
+                        {% endfor %}
                     </div>
                 </div>            
             </div>
@@ -30,9 +29,13 @@
     {% endblock %}
 
     {% block scripts %}{% endblock %}
-    
 
 
+    {% if env.APP_ENVIRONMENT == 'local' %}
+        <script type="module" src="http://127.0.0.1:3000/main.js"></script>
+    {% else %}
+        <script type="text/javascript" src="/dist/main.umd.js"></script>
+    {% endif %}
 
 </body>
 
