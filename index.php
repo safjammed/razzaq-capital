@@ -41,7 +41,7 @@ $twig->addGlobal('menu', [
     ],
     [
         'to' => 'mailto:info@razzaqcapital.com?subject=General%20Inquiry',
-        'title' => 'Investment',
+        'title' => 'Contact us',
     ],
 ]);
 
