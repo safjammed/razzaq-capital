@@ -1,2 +1,1 @@
-User-agent: *
-Disallow: /
+User-agent: *Disallow:Disallow: /cgi-bin/Sitemap: https://razzaqcapital.com/sitemap.xml
