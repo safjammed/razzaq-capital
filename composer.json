@@ -1,6 +1,6 @@
 {
     "require": {
-        "twig/twig": "^2.11",
+        "twig/twig": "^3.11",
         "vlucas/phpdotenv": "^5.4"
     }
 }
